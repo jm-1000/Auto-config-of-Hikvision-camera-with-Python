@@ -1,0 +1,127 @@
+{
+    "1": {
+        "description": "Web interface avec la page de connexion à gauche.",
+
+        "config": {
+            "Answer" : ["osmozis1", "osmozis2", "osmozis3"],
+            "Reserved Email" : ["osmozis@support.com"],
+            
+            "Device Name": ["000-C0"],
+        
+            "Time Zone" : ["(GMT+01:00) Amsterdam, Berlin, Rome, Paris"],
+            "Time Sync Mode" : [0],
+            "Server IP Address" : ["ntp.osmoziswifi.com"],
+            "Enable" : [true],
+            "Start Time" : ["Apr", "Last", "Sun", "02"],
+            "End Time" : ["Oct", "Last", "Sun", "03"],
+            "DST Bias" : [1],
+            
+            "Device IPv4 Address" : ["192.168.1.65"],
+            "IPv4 Subnet Mask" : ["255.255.255.0"],
+            "IPv4 Default Gateway" : ["192.168.1.1"],
+            "Preferred DNS Server" : ["10.0.2.1"],
+        
+            "Read User Name": ["osmozisr"],
+            "Security Level": ["auth, priv", "auth, priv"],
+            "Authentication Algorithm": [1, 3],
+            "Private Key Algorithm": [0, 2],
+            "Authentication Password": ["passSNMP", "passSNMP"],
+            "Private Key Password": ["passSNMP", "passSNMP"],
+            "Write User Name": ["osmozis"],
+        
+        
+            "Video Frame Rate(fps)" : ["20"],
+            "Max. Bit Rate" : ["4096"],
+            
+            "Channel Name" : ["000-C0"],
+            "Time Format" : ["24-Hour Time"],
+            "Date Format" : ["DD-MM-YYYY"]
+        },
+
+        "tabs": [
+            "Configuration", [
+                ["System", [
+                    ["System Settings", [
+                        ["Basic Information" ], ["Time Settings"]]]]],
+                ["Network", [
+                    ["Network Settings", [
+                        ["TCP/IP" ], ["SNMP" ]]]]],
+                ["Video/Audio" ],
+                ["Image" , [
+                    ["OSD Settings" ]]]]
+        ],
+
+        "params": {
+            "Device IPv4 Address": "i",
+            "IPv4 Subnet Mask": "m",
+            "IPv4 Default Gateway": "g",
+            "Preferred DNS Server": "g",
+            "Device Name": "n",
+            "Channel Name": "n",
+            "Password": "p"
+        }
+    },
+
+
+    "2": {
+        "description": "Web interface avec la page de connexion à droite.",
+
+        "config":{
+            "Answer" : ["osmozis1", "osmozis2", "osmozis3"],
+            "E-mail Address" : ["support@osmozis.com"],
+
+            "Device Name": ["000-C0"],
+            
+            "Time Zone" : ["(GMT+01:00) Amsterdam, Berlin, Rome, Paris"],
+            "NTP" : [0],
+            "Server Address" : ["ntp.osmoziswifi.com"],
+            "Enable DST" : [true],
+            "Start Time" : ["Apr", "Last", "Sun", "02"],
+            "End Time" : ["Oct", "Last", "Sun", "03"],
+            "DST Bias" : ["60minute(s)"],
+            
+            "IPv4 Address" : ["192.168.1.65"],
+            "IPv4 Subnet Mask" : ["255.255.0.0"],
+            "IPv4 Default Gateway" : ["192.168.1.254"],
+            "Preferred DNS Server" : ["192.168.1.254"],
+            
+            "Enable SNMPv3": [true],
+            "Read UserName": ["osmozisr"],
+            "Security Level": ["auth, priv", "auth, priv"],
+            "Authentication Algorithm": [1, 3],
+            "Private-key Algorithm": [0, 2],
+            "Authentication Password": ["passSNMP", "passSNMP"],
+            "Private-key password": ["passSNMP", "passSNMP"],
+            "Write UserName": ["osmozis"],
+
+            "Frame Rate" : ["20"],
+            "Max. Bitrate" : ["4096"],
+            
+            "Camera Name" : ["000-C0"],
+            "Time Format" : ["24-hour"],
+            "Date Format" : ["DD-MM-YYYY"]
+        },
+
+        "tabs": [
+            "Configuration", [
+                ["Video/Audio" ],
+                ["Image", [
+                    ["OSD Settings"]]],
+                ["System", [
+                    ["System Settings", [
+                        ["Basic Information"], ["Time Settings"], ["DST"]]]]],
+                ["Network", [
+                    ["Basic Settings"], ["Advanced Settings"]]]]
+        ],
+
+        "params": {
+            "IPv4 Address": "i",
+            "IPv4 Subnet Mask": "m",
+            "IPv4 Default Gateway": "g",
+            "Preferred DNS Server": "g",
+            "Device Name": "n",
+            "Camera Name": "n",
+            "Password": "p"
+        }
+    }
+}
